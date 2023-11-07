@@ -1,0 +1,30 @@
+.link-button {
+    font-family:'opensans-regular', sans-serif;
+    background-color: rgb(255, 255, 255);
+    border: 1;
+    color: rgb(30, 28, 71);/* text color */
+    border-radius: 20px;
+    width: 60px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*font-weight: bold;*/
+    padding-left: 20px; padding-right: 20px; padding-top: 15px; padding-bottom: 15px;/*padding: 15px 32px;*/
+    border-width: 1px;
+    margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px;
+    transition: opacity 0.15s ease-in-out, background-color 0.15s ease-in-out, color 0.15s ease-in-out;/*box-shadow 0.15s ease-in-out;*/
+}
+.link-button:hover {
+    background-color: rgb(172, 172, 172);
+    color: rgb(30, 28, 71);
+    opacity: 0.5;
+    /*box-shadow: 0px 0px 0px rgba(0,0,0,0.15);*/
+}
+.link-button:active {
+    background-color: rgb(172, 172, 172);
+    color: rgb(30, 28, 71);/* text color*/
+    opacity: 0.75;
+}

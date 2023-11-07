@@ -1,0 +1,16 @@
+.buttons{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    width: 30px;
+    border: 1;
+    margin: 15px 15px;
+    cursor: pointer;
+}
+.div-linkbuttons{
+    text-align: center;
+    height: 80px;
+}
+.div-buttons{
+    text-align: center;
+    height: 150px;
+}
