@@ -1,0 +1,130 @@
+.div-talks{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:center;
+}
+.div-talks-title{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+.div-talks-content{
+}
+.div-talks-content-grid{
+    display: grid; 
+    grid-template-columns: 0.3fr 0.2fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.div-talks-content-line-left{
+    display: flex;
+    text-align:right;
+    align-items: center;
+    justify-content: right;
+    height: 200px
+}
+.div-talks-content-line-center{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    line-height: 1.5;
+    color: white;
+    font-family:'opensans-regular', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    height: 200px
+}
+.div-talks-content-line-right{
+    flex-direction: column;
+    display: flex;
+    align-items:left;
+    justify-content:center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    line-height: 1.5;
+    color: white;
+    font-family:'opensans-regular', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.headingfour-talks{
+    color: white;
+    font-family:'opensans-regular', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    font-weight:normal;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    line-height: 30px;
+}
+.headingfive-talks{
+    color: white;
+    font-family:'opensans-regular', sans-serif;
+    text-align: left;
+    font-size: 16px;
+    font-weight:normal;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    line-height: 30px;;
+}
+@media (max-width:900px){
+    .div-talks-content-grid{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        grid-template-rows: auto;
+    }
+    .div-talks-content-line-left{
+        text-align:center;
+        justify-content: center;
+        height: 120px;
+    }
+    .div-talks-content-line-right{
+        display: flex;
+        align-items:center;
+        margin:0px;
+        justify-content: center;
+        text-align: center;
+    }
+    .headingfour-talks{
+        text-align: center;
+    }
+    .headingfive-talks{
+        text-align: center;
+    }
+    .div-talks-content-line-center{
+        height: 70px
+    }
+    .hku-logo-talks{
+        width: 100px;
+        margin: 0px;
+        object-fit: contain;
+    }
+    .rhul-logo-talks{
+        width: 150px;
+        margin: 0px;
+        object-fit: contain;
+    }
+    .AOGS-logo-talks{
+        width: 150px;
+        margin: 0px;
+        object-fit: contain;
+        background-color: white;
+    }
+    .TGS-logo-talks{
+        width: 150px;
+        margin: 0px;
+        object-fit: contain;
+    }
+    .AGU-logo-talks{
+        width: 150px;
+        margin: 0px;
+        object-fit: contain;
+        background-color: white;
+    }
+}

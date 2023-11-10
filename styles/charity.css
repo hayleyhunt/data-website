@@ -1,0 +1,15 @@
+.div-charity{
+    text-align: center;
+}
+.div-charity-title{
+}
+.div-charity-paragraph{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    vertical-align: middle;
+    width: 80%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
