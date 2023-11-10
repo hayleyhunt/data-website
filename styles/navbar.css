@@ -66,6 +66,7 @@
     margin: 10px;
     border-radius: 3px;
     padding: 7px 13px;
+    text-decoration: none;
 }
 .div-navbar-links:active,
 .div-navbar-links:hover{
