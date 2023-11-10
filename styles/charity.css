@@ -2,6 +2,9 @@
     text-align: center;
 }
 .div-charity-title{
+    display: flex;
+    text-align: center;
+    width: 100%;
 }
 .div-charity-paragraph{
     display:inline-block;
