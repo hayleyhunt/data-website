@@ -13,6 +13,7 @@
 .div-buttons{
     text-align: center;
     height: 150px;
+    z-index:1;
 }
 @media (max-width:1000px){
     .div-buttons{
