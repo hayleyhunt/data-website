@@ -72,6 +72,33 @@
     margin: 0px 0px 0px 0px;
     line-height: 30px;;
 }
+.hku-logo-talks{
+    width: 100px;
+    margin: 0px 20px 0px 0px;
+    object-fit: contain;
+}
+.rhul-logo-talks{
+    width: 150px;
+    margin: 0px 20px 0px 0px;
+    object-fit: contain;
+}
+.AOGS-logo-talks{
+    width: 150px;
+    margin: 0px 20px 0px 0px;
+    object-fit: contain;
+    background-color: white;
+}
+.TGS-logo-talks{
+    width: 150px;
+    margin: 0px 20px 0px 0px;
+    object-fit: contain;
+}
+.AGU-logo-talks{
+    width: 150px;
+    margin: 0px 20px 0px 0px;
+    object-fit: contain;
+    background-color: white;
+}
 @media (max-width:900px){
     .div-talks-content-grid{
         grid-template-columns: 1fr;
