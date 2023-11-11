@@ -1,13 +1,3 @@
-.hku-logo-talks{
-    width: 100px;
-    margin: 0px 20px 0px 0px;
-    object-fit: contain;
-}
-.rhul-logo-talks{
-    width: 150px;
-    margin: 0px 20px 0px 0px;
-    object-fit: contain;
-}
 .hku-logo-education{
     width: 100px;
     margin: 0px 20px 0px 0px;
@@ -17,23 +7,6 @@
     width: 150px;
     margin: 0px 20px 0px 0px;
     object-fit: contain;
-}
-.AOGS-logo-talks{
-    width: 150px;
-    margin: 0px 20px 0px 0px;
-    object-fit: contain;
-    background-color: white;
-}
-.TGS-logo-talks{
-    width: 150px;
-    margin: 0px 20px 0px 0px;
-    object-fit: contain;
-}
-.AGU-logo-talks{
-    width: 150px;
-    margin: 0px 20px 0px 0px;
-    object-fit: contain;
-    background-color: white;
 }
 .div-education{
 }
