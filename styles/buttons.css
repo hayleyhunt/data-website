@@ -14,3 +14,8 @@
     text-align: center;
     height: 150px;
 }
+@media (max-width:1000px){
+    .div-buttons{
+        height: 75px;
+    }
+}
