@@ -51,13 +51,15 @@
 		<nav class="div-navbar">
 			<div class="div-navbar-left-empty">
 				<div class="dropdown">
-					<button class="div-navbar-dropdown-icon" alt="Menu" onclick="myFunction()">
+					<button id="dropdown-button"class="div-navbar-dropdown-icon" alt="Menu" onclick="myFunction()">
 						<i style="font-size:24px; color:#ffffff; display:flex" class="fa">&#xf0c9;</i></i>
 					</button>
 					<script>
 						function myFunction() {
 							document.getElementById("myDropdown").classList.toggle("show");
 						}
+					</script>
+					<!--<script>
 						window.onclick = function(event) {
 							if (!event.target.matches('.div-navbar-dropdown-icon')) {
 								var dropdowns = document.getElementById("div-navbar-dropdown-content");
@@ -70,7 +72,7 @@
 								}
 							}
 						}
-					</script>
+					</script>-->
 					<div class="div-navbar-dropdown-content" id="myDropdown">
 						<ul>
 							<a href="#page-top" class="div-navbar-links">Intro</a>
@@ -80,6 +82,16 @@
 							<a href="#Contact" class="div-navbar-links">Contact</a>
 						</ul>
 					</div>
+					<script>
+						document.getElementById("page-top").addEventListener("click", function(event){  
+							let dropd = document.getElementById("myDropdown");
+							if (!event.target.parentNode.matches("dropdown-button")) {
+								dropd.classList.remove("visible");
+							} else {
+								dropd.classList.toggle("visible");
+							}
+						});
+					</script>
 				</div>
 			</div>
 			<div class="div-navbar-left">
@@ -95,6 +107,22 @@
 			</div>
 			<div class="div-navbar-right"></div>
 		</nav>
+		<!--<script>
+			$(window).scroll(function () { //on scroll event on window
+				var position = $(this).scrollTop(); //position scrolled sofar
+				$('.section').each(function() { //for each loop(chcecks for every element with that class)
+					//for your every section on site or your class of main sections you are targeting
+					var target = $(this).offset().top;//each element position from top
+					var targetBot = target + $(this).height();
+					var id = $(this).attr('id'); //this element ID - should be same as data-id on your nav link
+					$('nav a[data-id=' + id + ']').removeClass('hovered'); //clearing
+					if (position >= target && targetBot >= position) { //if you are scrolled over element with some id 
+						$('nav a[data-id=' + id + ']').addClass('hovered');
+						//this will check wich element you are scrolled on and selects in menu that item with same data-id :) 
+					}
+				});
+			});
+		</script>-->
 <!-- =======================  INTRODUCTION SECTION ======================= -->
 			<div id="Home" class="div-headshotintro">
 				<div class="div-headshot">
@@ -258,6 +286,7 @@
 		</div>
 	</div>
 </div>
+<div class="spacer"></div>
 <!-- =======================  TALKS SECTION ======================= -->
 			<hr>
 			<div id="Talks" class="div-talks">
