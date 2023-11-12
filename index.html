@@ -5,16 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
 				<link rel="stylesheet" href="styles/text.css">
+				<link rel="stylesheet" href="styles/about.css">
 				<link rel="stylesheet" href="styles/buttons.css">
 				<link rel="stylesheet" href="styles/images.css">
 				<link rel="stylesheet" href="styles/linkbuttons.css">
 				<link rel="stylesheet" href="styles/navbar.css">
 				<link rel="stylesheet" href="styles/opening.css">
 				<link rel="stylesheet" href="styles/portfolio.css">
+				<link rel="stylesheet" href="styles/skills.css">
 				<link rel="stylesheet" href="styles/education.css">
 				<link rel="stylesheet" href="styles/contact.css">
 				<link rel="stylesheet" href="styles/charity.css">
 				<link rel="stylesheet" href="styles/talks.css">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 				<style>
 					html {
 						scroll-padding-top: 70px;
@@ -23,104 +26,24 @@
 					body {
 						background-color: rgb(35,54,81);
 					}
-					.div-about{
-						align-items: center;
-						display: flex;
-						width: 100%;
-						justify-content:center;
-					}
-					.div-about-title{
-						display: flex;
-						text-align: center;
-						width: 100%;
-					}
-					.div-about-content{
-						display: flex;
-						flex-direction: column;
-						text-align: center;
-						align-items: center;
-						justify-content: center;
-						padding: 0px;
-					}
-					.div-about-content-list{
-						display:inline-block;
-						text-align: center;
-						align-items: center;
-						justify-content: center;
-						width:80%;
-					}
-					.div-skills{
-					}
-					.div-skills-title{
-						display: flex;
-						text-align: center;
-						width: 100%;
-					}
-					.skills-grid{
-						display:grid; 
-						grid-template-columns: 1fr 1fr 1fr; 
-						grid-template-rows: 1fr; 
-						flex-direction: column;
-						margin: 0px;
-					}
-					.skills-left{
-						background-color: white; 
-						color: rgb(30, 28, 71); 
-						border-radius: 20px; 
-						padding:10px; 
-						margin:20px; 
-						align-items:center; 
-						justify-content: center;
-						display:flex;
-						font-family:'opensans-regular', sans-serif;
-						font-size: 16px;
-						line-height: 30px;
-						font-weight: lighter;
-					}
-					.skills-center{
-						background-color: white; 
-						color: rgb(30, 28, 71); 
-						border-radius: 20px; 
-						padding:10px; 
-						margin:20px; 
-						align-items:center; 
-						display:flex;
-						justify-content: center;
-						display:flex;
-						font-family:'opensans-regular', sans-serif;
-						font-size: 16px;
-						line-height: 30px;
-						font-weight: lighter;
-					}
-					.skills-right{
-						background-color: white; 
-						color: rgb(30, 28, 71); 
-						border-radius: 20px; 
-						padding:10px; 
-						margin:20px; 
-						align-items:center; 
-						display:flex;
-						justify-content: center;
-						display:flex;
-						font-family:'opensans-regular', sans-serif;
-						font-size: 16px;
-						line-height: 30px;
-						font-weight: lighter;
-					}
-					.skills-bar{
-					background-color: rgb(255, 0, 0);
-					height:20px;
-					
-					}
-					.skills-bar-progress{
-					background-color: rgb(0, 255, 0); 
-					}
 					.div-footer{
 						text-align: center;
 					}
 					.spacer{
 						height: 50px;
 					}
+					/*-- button{
+						background-image: url("images/icons/bars-solid.svg");
+						display: inline-block;
+						vertical-align: middle;
+						width: 30px;
+						height: 30px;
+						margin: 0px 0px 0px 30px;
+						padding: 0px 0px 0px 0px;
+						line-height: 70px;
+						display: none;
+						cursor: pointer; 
+					}*/
 				</style>
     </head>
 <!-- =======================  NAVBAR ======================= -->
@@ -128,22 +51,42 @@
 		<nav class="div-navbar">
 			<div class="div-navbar-left-empty">
 				<div class="dropdown">
-					<img class="div-navbar-dropdown-icon" src="images/icons/bars-solid.svg" alt="Menu">
-						<div class="div-navbar-dropdown-content">
-							<ul>
-								<a href="#page-top" class="div-navbar-links">Home</a>
-								<a href="#Portfolio" class="div-navbar-links">Portfolio</a>
-								<a href="#Talks" class="div-navbar-links">Talks</a>
-								<a href="#Education" class="div-navbar-links">Education</a>
-								<a href="#Contact" class="div-navbar-links">Contact</a>
-							</ul>
-						</div>
+					<button class="div-navbar-dropdown-icon" alt="Menu" onclick="myFunction()">
+						<i style="font-size:24px; color:#ffffff; display:flex" class="fa">&#xf0c9;</i></i>
+					</button>
+					<script>
+						function myFunction() {
+							document.getElementById("myDropdown").classList.toggle("show");
+						}
+						window.onclick = function(event) {
+							if (!event.target.matches('.div-navbar-dropdown-icon')) {
+								var dropdowns = document.getElementById("div-navbar-dropdown-content");
+								var i;
+								for (i = 0; i < dropdowns.length; i++) {
+									var openDropdown = dropdowns[i];
+									if (openDropdown.classList.contains('show')) {
+										openDropdown.classList.remove('show');
+									}
+								}
+							}
+						}
+					</script>
+					<div class="div-navbar-dropdown-content" id="myDropdown">
+						<ul>
+							<a href="#page-top" class="div-navbar-links">Intro</a>
+							<a href="#Portfolio" class="div-navbar-links">Portfolio</a>
+							<a href="#Talks" class="div-navbar-links">Talks</a>
+							<a href="#Education" class="div-navbar-links">Education</a>
+							<a href="#Contact" class="div-navbar-links">Contact</a>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="div-navbar-left">
 				<a href="#page-top" class="div-navbar-links">Home</a>
 				<a href="#Portfolio" class="div-navbar-links">Portfolio</a>
-				<a href="#Talks" class="div-navbar-links">Experience</a>
+				<a href="#Talks" class="div-navbar-links">Talks</a>
+				<a href="#Education" class="div-navbar-links">Education</a>
 				<a href="#Contact" class="div-navbar-links">Contact</a>
 			</div>
 			<div class="div-navbar-centre">
@@ -385,7 +328,7 @@
 				<div class="spacer"></div>
 				<div class="div-contact-paragraph">
 					<p class="div-contact-paragraph">
-						Feel free to contact me for any questions. For open source projects, please open an issue or pull request on Github. Otherwise, send me an email at <a href="hayley.hunt@hotmail.co.uk" style="padding:0; margin:0;">hayley.hunt@hotmail.co.uk</a>.</p>
+						Feel free to contact me for any questions. For open source projects, please open an issue or pull request on Github. Otherwise, send me an email at <a href=hayley.hunt@hotmail.co.uk style="padding:0;margin:0;">hayley.hunt@hotmail.co.uk</a>.</p>
 				</div>
 				<div class="spacer"></div>
 			</div>
@@ -398,7 +341,7 @@
 				<div class="div-charity-paragraph">
 					<div class="spacer"></div>
 					<p class="div-charity-paragraph">
-						I have pledged to donate 1% of my income until I complete my PhD programme to organisations that can most effectively use it to improve the lives of others, now and in the years to come through the charity <a href=https://www.givingwhatwecan.org/about-us/members target="_blank" style="padding:0;margin:0;">Giving What We Can</a>.</p>
+						I have pledged to donate 1% of my income until I complete my PhD programme to organisations that can most effectively use it to improve the lives of others, now and in the years to come through the charity <a style="padding:0;margin:0;" href=https://www.givingwhatwecan.org/about-us/members target="_blank">Giving What We Can.</a></p>
 				</div>
 				<div class="spacer"></div>
 			</div>
