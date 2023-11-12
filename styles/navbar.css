@@ -65,7 +65,6 @@
 .show {
     display: block;
 }
-
 .div-navbar-links{
     text-transform: uppercase;
     text-align: center;
@@ -82,7 +81,7 @@
 .div-navbar-links:hover{
     transition:0.5s;
 }
-.div-navbar-links:hover {
+.div-navbar-links:hover{
     transition:0.5s;
     background-color: rgb(150, 150, 150);
     cursor: pointer;
@@ -95,7 +94,7 @@
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    width:170px;
+    width:250px;
     margin: auto;
 }
 .navbar-headingone{
