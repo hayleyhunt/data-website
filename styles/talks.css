@@ -3,6 +3,7 @@
     align-items: center;
     width: 100%;
     justify-content:center;
+    flex-direction: column;
 }
 .div-talks-title{
     display: flex;
