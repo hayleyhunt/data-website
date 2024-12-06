@@ -94,7 +94,7 @@
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    width:250px;
+    width:400px;
     margin: auto;
 }
 .navbar-headingone{
@@ -143,6 +143,11 @@
     }
     .div-navbar-left{
         display:none;
+    }
+}
+@media (max-width:400px){
+    .div-navbar{
+        height: 100px;
     }
 }
 .div-navbar-right{
