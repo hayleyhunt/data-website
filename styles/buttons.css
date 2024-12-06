@@ -20,3 +20,8 @@
         height: 70px;
     }
 }
+@media (max-width:1300px){
+    .div-linkbuttons{
+        height: 160px;
+    }
+}
