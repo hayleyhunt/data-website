@@ -47,6 +47,13 @@
 						display: none;
 						cursor: pointer; 
 					}*/
+					#particles-js {
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0; left: 0;
+						z-index: -1;
+						}
 				</style>
     </head>
 <!-- =======================  NAVBAR ======================= -->
@@ -57,38 +64,48 @@
 					<button id="dropdown-button"class="div-navbar-dropdown-icon" alt="Menu" onclick="myFunction()">
 						<i style="font-size:24px; color:#ffffff; display:flex" class="fa">&#xf0c9;</i></i>
 					</button>
+
+
+
 					<script>
+						// Close dropdown when clicking a link or outside the dropdown
+						document.addEventListener('click', function(event) {
+						  const dropdown = document.getElementById('myDropdown');
+						  const button = document.getElementById('dropdown-button');
+					  
+						  // Check if click was inside the dropdown or button
+						  const clickedInside = dropdown.contains(event.target) || button.contains(event.target);
+					  
+						  // If not inside, hide the dropdown
+						  if (!clickedInside) {
+							dropdown.classList.remove('show');
+						  }
+					  
+						  // If clicked on a link inside dropdown, also hide
+						  if (event.target.classList.contains('div-navbar-links')) {
+							dropdown.classList.remove('show');
+						  }
+						});
+					  
+						// Toggle dropdown
 						function myFunction() {
-							document.getElementById("myDropdown").classList.toggle("show");
+						  document.getElementById("myDropdown").classList.toggle("show");
 						}
-					</script>
-					<!--<script>
-						window.onclick = function(event) {
-							if (!event.target.matches('.div-navbar-dropdown-icon')) {
-								var dropdowns = document.getElementById("div-navbar-dropdown-content");
-								var i;
-								for (i = 0; i < dropdowns.length; i++) {
-									var openDropdown = dropdowns[i];
-									if (openDropdown.classList.contains('show')) {
-										openDropdown.classList.remove('show');
-									}
-								}
-							}
-						}
-					</script>-->
+					  </script>
+
 					<div class="div-navbar-dropdown-content" id="myDropdown">
 						<ul>
-							<a href="#page-top" class="div-navbar-links">Intro</a>
-							<a href="#Portfolio" class="div-navbar-links">Portfolio</a>
-							<a href="#Education" class="div-navbar-links">Education</a>
-							<!--<a href="#Talks" class="div-navbar-links">Talks</a>-->
-							<a href="#Contact" class="div-navbar-links">Contact</a>
+						<li><a href="#page-top" class="div-navbar-links">Intro</a></li>
+						<li><a href="#Portfolio" class="div-navbar-links">Portfolio</a></li>
+						<li><a href="#Education" class="div-navbar-links">Education</a></li>
+						<li><a href="#Contact" class="div-navbar-links">Contact</a></li>
 						</ul>
 					</div>
+
 					<script>
 						document.getElementById("page-top").addEventListener("click", function(event){  
 							let dropd = document.getElementById("myDropdown");
-							if (!event.target.parentNode.matches("dropdown-button")) {
+							if (!event.target.closest("dropdown-button")) {
 								dropd.classList.remove("visible");
 							} else {
 								dropd.classList.toggle("visible");
@@ -126,6 +143,50 @@
 				});
 			});
 		</script>-->
+
+<!-- =======================  BACKGROUND ======================= -->
+		<div id="particles-js"></div>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
+		<script>
+			particlesJS('particles-js', {
+			  "particles": {
+				"number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
+				"color": { "value": "#999999" },
+				"shape": { "type": "circle" },
+				"opacity": { "value": 0.5, "random": true },
+				"size": { "value": 3, "random": true },
+				"line_linked": {
+				  "enable": true,
+				  "distance": 150,
+				  "color": "#cccccc",
+				  "opacity": 0.4,
+				  "width": 1
+				},
+				"move": {
+				  "enable": true,
+				  "speed": 2,
+				  "direction": "none",
+				  "random": true,
+				  "straight": false,
+				  "out_mode": "out"
+				}
+			  },
+			  "interactivity": {
+				"detect_on": "canvas",
+				"events": {
+				  "onhover": { "enable": true, "mode": "grab" },
+				  "onclick": { "enable": true, "mode": "push" }
+				},
+				"modes": {
+				  "grab": { "distance": 120, "line_linked": { "opacity": 0.6 } },
+				  "push": { "particles_nb": 4 }
+				}
+			  },
+			  "retina_detect": true
+			});
+		  </script>
+
 <!-- =======================  INTRODUCTION SECTION ======================= -->
 			<div id="Home" class="div-headshotintro">
 				<div class="div-headshot">
@@ -136,13 +197,13 @@
 						<div class="introduction-paragraph">
 							<h1 class="headingone" style="text-align: center;">Data Scientist</h1>
 							</br>
-							<h2 class="headingthree" style="text-align: center;">The University of Hong Kong</h2>
+							<h2 class="headingthree" style="text-align: center;">Leveraging Data for Social Good </br></br> Supply Chain Sustainability </br></br> Data Strategy, Modeling & Analytics</h2>
 							</br>
-							<h2 class="headingthree" style="text-align: center;">Leveraging Data for Social Good | Data Strategy, Modeling & Analytics</h2>
 						</div>
 						<p class="introduction-paragraph" style="display: inline-block">
-							I am a dedicated and highly skilled research scientist with over 6 years of expertise specialising in synthesising insights from complex social science, geological, spatial, and temporal data to solve real-world problems using numerical modeling, data analysis, and data visualisation.
-							I'm currently based in Hong Kong after recently completing my PhD in Applied Data Science (Earth Science) at <a style="padding: 0; margin: 0;display: inline-block;" href="https://www.earthsciences.hku.hk/people/research-postgraduate-students" target="_blank">The University of Hong Kong.</a></br></br>
+							I am a dedicated and highly skilled Managing Data Scientist with over 7 years of experience transforming complex supply chain, human rights, and geospatial data into actionable insights.
+							With a background in applied data science, I develop and deploy advanced analytical solutions and transformations that drive meaningful, measurable, and lasting impact across global systems.
+							I'm currently based in Hong Kong after recently completing my PhD in Applied Data Science (Earth Science) at The University of Hong Kong.</br></br>
 						</p>
 						<div class="div-linkbuttons">
 							<a type="button" href="#Portfolio" class="link-button">Portfolio</a>
@@ -173,7 +234,14 @@
 				<div class="spacer"></div>
 				<div class="div-about-content" style="justify-content: center">
 					<p class="div-about-content-list">
-						I have a strong background in identifying requirements, developing data strategies, and managing data science projects through their complete life cycle. I am skilled at model calibration, model and process optimisation (Bayesian, parallel computing, process automation), hyper parameter tuning, and validation against independent datasets in Python. I have proven success in effectively communicating high-quality, data-driven insights to internal and external, technical and non-technical stakeholders.</br></br>
+						In my current role at LRQA, I lead the development of scalable, data-driven tools and products that support responsible sourcing and supply chain due diligence. 
+						A core part of my role involves leading the integration, analysis, and development of grievance mechanism data collected across 11 helplines worldwide—empowering companies to identify emerging risks, support effective remediation, and strengthen their human rights and ESG strategies. 
+						Through this work, I actively use data to amplify marginalised voices and enhance equity in access to remedy and protection within global supply chains.</br></br>
+						
+						My technical expertise includes identification of business and data requirements, developing data strategies, and managing data science projects through their complete life cycle. I am skilled at model calibration, model and process optimisation (Bayesian, parallel computing, process automation), hyper parameter tuning, and validation against independent datasets in Python. 
+						I have proven success in effectively communicating high-quality, data-driven insights to technical and non-technical stakeholders.</br></br>
+						
+						I’m passionate about leveraging data for social good and committed to building inclusive, accountable systems through evidence-based approaches.
 						I am eager to apply my data skills with stakeholders across various sectors to tackle complex challenges and contribute to impactful, effective, and tangible solutions.</br></br>
 						I am available for short-term projects and longer-term engagements.</br></br>
 						In my pursuit of impactful projects, I prioritise initiatives which:</br>
@@ -184,7 +252,7 @@
 								<div class="about-box-content" style="display:flex">
 									<img class="people-group-logo" src="images/icons/people-group-solid.svg" alt="people-group"></br>
 								</div>
-								<p style="color:rgb(35,54,81)">Benefit a large number of individuals as a result</p>
+								<p style="color:rgb(35,54,81)">Benefit a large number of individuals</p>
 							</div>
 						</div>
 						<div class="about-box">
@@ -200,7 +268,7 @@
 								<div class="about-box-content" style="display:flex">
 									<img class="people-group-logo" src="images/icons/arrow-up-right-dots-solid.svg" alt="maximise-time"></br>
 								</div>
-								<p style="color:rgb(35,54,81)">Have the potential to generate long-term, self-sustaining benefits, ensuring lasting impact and meaningful change.</p>
+								<p style="color:rgb(35,54,81)">Create long-term, self-sustaining positive change</p>
 							</div>
 						</div>
 					</div>
@@ -232,8 +300,22 @@
 					<h2 class="headingtwo">Portfolio</h2>
 				</div>
 				<div class="spacer" style="height: 20px"></div>
-				<div class="headingthree" style="text-align: center;">PhD Projects - Applied Data Science (Earth Science)</div>
+				<div class="headingthree" style="text-align: center;">LRQA - Grievance Mechanisms</div>
 				<div class="spacer" style="height: 20px"></div>
+				<div class="portfolio-grid">
+					<div class="portfolio-box4">
+						<p class="portfolio-box-content1"></br>
+							<b>Global Grievance Data Integration:</b> Developed the strategic plan and led the integration of grievance data across 11 helplines, establishing a standardised and holistic approach to client interaction with their grievance data that promotes consistency and improves service delivery.</br></br>
+							<b>Grievance Mechanisms Product Development:</b> Led the development and implementation of a customised Power BI dashboard, enhancing data visibility which is tailored to client needs. This initiative streamlined decision-making for addressing grievances, significantly improving client satisfaction. I utilised client insights to iteratively enhance the dashboard’s features, ensuring it meets evolving user requirements.</br></br>
+							<b>CRM System Enhancement:</b> Led the integration of multiple CRM systems, including Zendesk, and implemented strategic changes that optimised data insights from calls to 11 grievance mechanism helplines. Contributed to the ongoing expansion of grievance data systems, including the establishment of 2 new helplines, improving scalability and adaptability to meet client needs and significantly enhancing the resolution of employee concerns and grievance remuneration.</br></br>
+							<b>People Management:</b> Oversaw the performance and development of a Data Analyst and actively participated in recruitment to strengthen our team’s capabilities and align with organisational goals.</br></br>
+							<b>Cross-Functional Collaboration:</b> Partnered with the EIQ team and global stakeholders to align project objectives, fostering a collaborative environment that enhances a data-driven culture across the organisation.</br></br>
+							Active member of the LRQA LGBT+ Focus Group.</a></br></br>
+							Professional experience</br>
+							(December 2024 - present)</p>
+					</div>
+				<div class="spacer" style="height: 20px"></div>
+				<div class="headingthree" style="text-align: center;">PhD Projects - Applied Data Science (Earth Science)</div>
 				<div class="div-portfolio-intro">
 					<p class="div-portfolio-paragraph">
 						My PhD research tested progressive mountain uplift as a driver of lateral biodiversification and river reorganisation through modelling multi-million-year-scale interactions between mantle geodynamics, crustal tectonics, topography, fluvial system evolution, and biotic migration and speciation, using the Miocene Himalaya as a case study.</br></br>
@@ -434,7 +516,7 @@
 			</div>
 <!-- =======================  FOOTER ======================= -->
 			<div class="div-footer">
-				<p>Copyright &copy; Hayley Hunt 2024</p>
+				<p>Copyright &copy; Hayley Hunt 2025</p>
 			</div>
     </body>
 </html>
