@@ -27,14 +27,25 @@
     text-align: center;
     width: 100%;
 }
-.div-education-content{
-}
+.div-education-content {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+.education-grid {
+    display: grid;
+    grid-template-columns: 40% 10% 1fr;
+    gap: 10px; /* Optional: Adds spacing between grid cells */
+    width: 100%;
+  }
 .div-education-content-line-left{
     display: flex;
-    text-align:right;
+    text-align:center;
     align-items: center;
-    justify-content: right;
-    height: 150px
+    justify-content: center;
+    flex-direction: column;
 }
 .div-education-content-line-right{
     flex-direction: row;
@@ -48,5 +59,5 @@
     font-family:'opensans-regular', sans-serif;
     font-weight: lighter;
     font-size: 16px;
-    height: 150px;
+    flex-direction: column;
 }
