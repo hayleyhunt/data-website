@@ -53,43 +53,85 @@
         background-color: rgb(73, 127, 174);
     }
 }
-.div-navbar-dropdown-content{
-    display: none;
+.div-navbar-dropdown-content {
     position: absolute;
-    float:left;
-    margin: 0 1.5%;
+    /* float: left; */  /* REMOVE this */
+    margin: 0;          /* Reset margin for precise placement */
     background-color: white;
-    min-width: 200px;
+    min-width: 150px;
     z-index: 2;
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    top: 100%;  /* place below the button */
+    left: 10px;    /* align left edges */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
 }
+
+.div-navbar-dropdown-content.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.div-navbar-dropdown-content ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.div-navbar-dropdown-content li {
+    margin: 0;
+}
+
+.div-navbar-dropdown-content .div-navbar-links {
+    display: block;  /* full width clickable */
+    padding: 10px 20px;
+    color: rgb(35,54,81);
+    border-radius: 0;
+    margin: 0; /* override earlier margin */
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.div-navbar-dropdown-content .div-navbar-links:hover {
+    background-color: rgb(150, 150, 150);
+    color: white;
+}
+
 .show {
     display: block;
 }
-.div-navbar-links{
+.div-navbar-links {
     text-transform: uppercase;
     text-align: center;
     display: inline-block;
     vertical-align: middle;
-    width: 1fr;
     margin: 10px;
     border-radius: 3px;
     padding: 7px 13px;
     text-decoration: none;
-    color: rgb(35,54,81);
+    color: rgb(35, 54, 81);
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
 }
-.div-navbar-links:active,
-.div-navbar-links:hover{
-    transition:0.5s;
-}
-.div-navbar-links:hover{
-    transition:0.5s;
+
+.div-navbar-links:hover {
     background-color: rgb(150, 150, 150);
+    color: white; /* Optional: contrast improvement */
     cursor: pointer;
 }
+
 .div-navbar-links:active {
-    background-color: rgb(150, 150, 150);/* text color*/
+    background-color: rgb(150, 150, 150);
     opacity: 0.75;
 }
+
 .div-navbar-centre{
     display: inline-block;
     vertical-align: middle;
