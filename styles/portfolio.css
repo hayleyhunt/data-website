@@ -1,256 +1,522 @@
-.div-portfolio-title{
-    display: flex;
-    text-align: center;
-    width: 100%;
-}
-.div-portfolio-intro{
-    display:inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
-    vertical-align: middle;
-    width: 50%;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-.div-portfolio{
-    display: flex;
-    align-items:center;
-    width: 100%;
-    justify-content:center;
-    flex-direction: column;
-}
-.div-portfolio-content{
-    display: flex;
-    width:80%;
-    flex-direction: column;
-    align-items:center;
-    margin: 0px 0px 0px 0px;
-    justify-content:center;
-}
-.div-portfolio-content-line-right{
-    flex-direction: column;
-    display: flex;
-    text-align:justify;
-    justify-content: center;
-    padding:0px;
-    align-items: start;
-}
-.div-portfolio-paragraph{
-    display:inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
-    vertical-align: middle;
-    width: 80%;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-.portfolio-grid{
-    display:grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows:1fr; 
-    flex-direction: column; 
-    width:80%; 
-    margin:5px; 
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
-    vertical-align: center;
-}
-.portfolio-box1{
-    text-align: center; 
-    justify-content: center; 
-    color:rgb(35,54,81); 
-    background-color:white;	
-    border-radius: 20px; 
-    margin:10px;
-    height:210px;
-    align-items: center;
-    vertical-align:center;
-    display:flex;
-    padding:1;
-    transition: background-color 0.1s ease-in-out;
-}
-.portfolio-box2{
-    text-align: center; 
-    justify-content: center; 
-    color:rgb(35,54,81); 
-    background-color:white;	
-    border-radius: 20px; 
-    margin:10px;
-    height:210px;
-    align-items: center;
-    vertical-align:center;
-    display:flex;
-    padding:1;
-    transition: background-color 0.1s ease-in-out;
-}
-.portfolio-box3{
-    text-align: center; 
-    justify-content: center; 
-    color:rgb(35,54,81); 
-    background-color:white;	
-    border-radius: 20px; 
-    margin:10px;
-    height:210px;
-    align-items: center;
-    vertical-align:center;
-    display:flex;
-    padding:1;
-    transition: background-color 0.1s ease-in-out;
-}
-.portfolio-box4{
-    text-align: center; 
-    justify-content: center; 
-    color:rgb(35,54,81); 
-    background-color:white;	
-    border-radius: 20px; 
-    margin:10px;
-    height:300px;
-    align-items: center;
-    vertical-align:center;
-    display:flex;
-    padding:1;
-    transition: background-color 0.1s ease-in-out;
-}
-.portfolio-box5{
-    text-align: center; 
-    justify-content: center; 
-    color:rgb(35,54,81); 
-    background-color:white;	
-    border-radius: 20px; 
-    margin:10px;
-    height:300px;
-    align-items: center;
-    vertical-align:center;
-    display:flex;
-    padding:1;
-    transition: background-color 0.1s ease-in-out;
-}
-/*.portfolio-box-hover1{
-    text-align: center; 
-    justify-content: center; 
-    color:rgb(35,54,81); 
-    border-radius: 20px; 
-    margin:10px;
-    height:210px;
-    align-items: center;
-    vertical-align:center;
-    display:none;
-    padding:1;
-    transition: background-color 0.1s ease-in-out;
-}
-.portfolio-box-hover2{
-    text-align: center; 
-    justify-content: center; 
-    color:rgb(35,54,81); 
-    border-radius: 20px; 
-    margin:10px;
-    height:210px;
-    align-items: center;
-    vertical-align:center;
-    display:none;
-    padding:1;
-    transition: background-color 0.1s ease-in-out;
-}
-.portfolio-box-hover3{
-    text-align: center; 
-    justify-content: center; 
-    color:rgb(35,54,81); 
-    border-radius: 20px; 
-    margin:10px;
-    height:210px;
-    align-items: center;
-    vertical-align:center;
-    display:none;
-    padding:1;
-    transition: background-color 0.1s ease-in-out;
-}*/
-.portfolio-box-content1{
-    color: rgb(30, 28, 71);
-    text-align: center;
-    vertical-align: middle;
-}
-.portfolio-box-content2{
-    color: rgb(30, 28, 71);
-    text-align: center;
-    vertical-align: middle;
-}
-.portfolio-box-content3{
-    color: rgb(30, 28, 71);
-    text-align: center;
-    vertical-align: middle;
-}
-/*.portfolio-box1:hover {
-    .portfolio-box-content1{
-        display:none;
-    }
-    .portfolio-box-hover1{
-        display:flex;
-    }
-    background-color: rgb(172,172,172)
-}
-.portfolio-box2:hover {
-    .portfolio-box-content2{
-        display:none;
-    }
-    .portfolio-box-hover2{
-        display:flex;
-    }
-    background-color: rgb(172,172,172)
-}
-.portfolio-box3:hover {
-    .portfolio-box-content3{
-        display:none;
-    }
-    .portfolio-box-hover3{
-        display:flex;
-    }
-    background-color: rgb(172,172,172)
-}*/
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+				<link rel="stylesheet" href="styles/text.css">
+				<link rel="stylesheet" href="styles/about.css">
+				<link rel="stylesheet" href="styles/buttons.css">
+				<link rel="stylesheet" href="styles/images.css">
+				<link rel="stylesheet" href="styles/linkbuttons.css">
+				<link rel="stylesheet" href="styles/navbar.css">
+				<link rel="stylesheet" href="styles/opening.css">
+				<link rel="stylesheet" href="styles/portfolio.css">
+				<link rel="stylesheet" href="styles/skills.css">
+				<link rel="stylesheet" href="styles/education.css">
+				<link rel="stylesheet" href="styles/contact.css">
+				<link rel="stylesheet" href="styles/charity.css">
+				<link rel="stylesheet" href="styles/talks.css">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<style>
+					html {
+						scroll-padding-top: 70px;
+						scroll-behavior: smooth;
+					}
+					body {
+						background-color: rgb(35,54,81);
+					}
+					.div-footer{
+						text-align: center;
+					}
+					.spacer{
+						height: 50px;
+					}
+					.filter-color{
+						filter: invert(14%) sepia(82%) saturate(446%) hue-rotate(175deg) brightness(98%) contrast(86%);
+					}
+					/*-- button{
+						background-image: url("images/icons/bars-solid.svg");
+						display: inline-block;
+						vertical-align: middle;
+						width: 30px;
+						height: 30px;
+						margin: 0px 0px 0px 30px;
+						padding: 0px 0px 0px 0px;
+						line-height: 70px;
+						display: none;
+						cursor: pointer; 
+					}*/
+					#particles-js {
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0; left: 0;
+						z-index: -1;
+						}
+				</style>
+    </head>
+<!-- =======================  NAVBAR ======================= -->
+    <body id="page-top" style="padding-top: 70px">
+		<nav class="div-navbar">
+			<div class="div-navbar-left-empty">
+				<div class="dropdown">
+					<button id="dropdown-button"class="div-navbar-dropdown-icon" alt="Menu" onclick="myFunction()">
+						<i style="font-size:24px; color:#ffffff; display:flex" class="fa">&#xf0c9;</i></i>
+					</button>
 
-@media(max-width:1768px){
-    .portfolio-grid{
-        grid-template-columns: 1fr;
-        width:50%;
-    }
-}
-@media(max-width:949px){
-    .portfolio-grid{
-        width:90%;
-    }
-    .div-portfolio-paragraph{
-        width: 100%;
-    }
-    .div-portfolio-intro{
-        width: 80%;
-    }
-}
-@media(max-width:291px){
-    .portfolio-box1{
-        height: 250px;
-    }
-    .portfolio-box2{
-        height: 250px;
-    }
-    .portfolio-box3{
-        height: 250px;
-    }
-}
-@media(max-width:370px){
-    .portfolio-box5{
-        height: 600px;
-    }
-    .portfolio-box4{
-        height: 350px;
-    }
-}
-@media(min-width:371px){
-    .portfolio-box5{
-        height: 400px;
-    }
-    .portfolio-box4{
-        height: 300px;
-    }
-}
+
+
+					<script>
+						// Close dropdown when clicking a link or outside the dropdown
+						document.addEventListener('click', function(event) {
+						  const dropdown = document.getElementById('myDropdown');
+						  const button = document.getElementById('dropdown-button');
+					  
+						  // Check if click was inside the dropdown or button
+						  const clickedInside = dropdown.contains(event.target) || button.contains(event.target);
+					  
+						  // If not inside, hide the dropdown
+						  if (!clickedInside) {
+							dropdown.classList.remove('show');
+						  }
+					  
+						  // If clicked on a link inside dropdown, also hide
+						  if (event.target.classList.contains('div-navbar-links')) {
+							dropdown.classList.remove('show');
+						  }
+						});
+					  
+						// Toggle dropdown
+						function myFunction() {
+						  document.getElementById("myDropdown").classList.toggle("show");
+						}
+					  </script>
+
+					<div class="div-navbar-dropdown-content" id="myDropdown">
+						<ul>
+						<li><a href="#page-top" class="div-navbar-links">Intro</a></li>
+						<li><a href="#Portfolio" class="div-navbar-links">Portfolio</a></li>
+						<li><a href="#Education" class="div-navbar-links">Education</a></li>
+						<li><a href="#Contact" class="div-navbar-links">Contact</a></li>
+						</ul>
+					</div>
+
+					<script>
+						document.getElementById("page-top").addEventListener("click", function(event){  
+							let dropd = document.getElementById("myDropdown");
+							if (!event.target.closest("dropdown-button")) {
+								dropd.classList.remove("visible");
+							} else {
+								dropd.classList.toggle("visible");
+							}
+						});
+					</script>
+				</div>
+			</div>
+			<div class="div-navbar-left">
+				<a href="#page-top" class="div-navbar-links" style="color: rgb(255, 255, 255);">Home</a>
+				<a href="#Portfolio" class="div-navbar-links" style="color: rgb(255, 255, 255);">Portfolio</a>
+				<a href="#Education" class="div-navbar-links" style="color: rgb(255, 255, 255);">Education</a>
+				<!--<a href="#Talks" class="div-navbar-links" style="color: rgb(255, 255, 255);">Talks</a>-->
+				<a href="#Contact" class="div-navbar-links" style="color: rgb(255, 255, 255);">Contact</a>
+			</div>
+			<div class="div-navbar-centre">
+				<h2 class="navbar-headingone">Hayley Hunt, PhD</h2>
+				<!--<h2 class="navbar-degrees">Data Scientist</h2>-->
+			</div>
+			<div class="div-navbar-right"></div>
+		</nav>
+		<!--<script>
+			$(window).scroll(function () { //on scroll event on window
+				var position = $(this).scrollTop(); //position scrolled sofar
+				$('.section').each(function() { //for each loop(chcecks for every element with that class)
+					//for your every section on site or your class of main sections you are targeting
+					var target = $(this).offset().top;//each element position from top
+					var targetBot = target + $(this).height();
+					var id = $(this).attr('id'); //this element ID - should be same as data-id on your nav link
+					$('nav a[data-id=' + id + ']').removeClass('hovered'); //clearing
+					if (position >= target && targetBot >= position) { //if you are scrolled over element with some id 
+						$('nav a[data-id=' + id + ']').addClass('hovered');
+						//this will check wich element you are scrolled on and selects in menu that item with same data-id :) 
+					}
+				});
+			});
+		</script>-->
+
+<!-- =======================  BACKGROUND ======================= -->
+		<div id="particles-js"></div>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
+		<script>
+			particlesJS('particles-js', {
+			  "particles": {
+				"number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
+				"color": { "value": "#999999" },
+				"shape": { "type": "circle" },
+				"opacity": { "value": 0.5, "random": true },
+				"size": { "value": 3, "random": true },
+				"line_linked": {
+				  "enable": true,
+				  "distance": 150,
+				  "color": "#cccccc",
+				  "opacity": 0.4,
+				  "width": 1
+				},
+				"move": {
+				  "enable": true,
+				  "speed": 2,
+				  "direction": "none",
+				  "random": true,
+				  "straight": false,
+				  "out_mode": "out"
+				}
+			  },
+			  "interactivity": {
+				"detect_on": "canvas",
+				"events": {
+				  "onhover": { "enable": true, "mode": "grab" },
+				  "onclick": { "enable": true, "mode": "push" }
+				},
+				"modes": {
+				  "grab": { "distance": 120, "line_linked": { "opacity": 0.6 } },
+				  "push": { "particles_nb": 4 }
+				}
+			  },
+			  "retina_detect": true
+			});
+		  </script>
+
+<!-- =======================  INTRODUCTION SECTION ======================= -->
+			<div id="Home" class="div-headshotintro">
+				<div class="div-headshot">
+					<img class="headshot" src="images/Hayley Hunt.jpeg" alt="Hayley Hunt headshot">
+				</div>
+				<div class="div-introduction-container">
+					<div class="div-introduction">
+						<div class="introduction-paragraph">
+							<h1 class="headingone" style="text-align: center;">Data Scientist</h1>
+							</br>
+							<h2 class="headingthree" style="text-align: center;">Leveraging Data for Social Good </br></br> Supply Chain Sustainability </br></br> Data Strategy, Modeling & Analytics</h2>
+							</br>
+						</div>
+						<p class="introduction-paragraph" style="display: inline-block">
+							I am a dedicated and highly skilled Managing Data Scientist with over 7 years of experience transforming complex supply chain, human rights, and geospatial data into actionable insights.
+							With a background in applied data science, I develop and deploy advanced analytical solutions and transformations that drive meaningful, measurable, and lasting impact across global systems.
+							I'm currently based in Hong Kong after recently completing my PhD in Applied Data Science (Earth Science) at The University of Hong Kong.</br></br>
+						</p>
+						<div class="div-linkbuttons">
+							<a type="button" href="#Portfolio" class="link-button">Portfolio</a>
+							<!--<a type="button" href="https://drive.google.com/file/d/1qG6PnsGgFM04MTmRM3eULAcmn6s5jvUO/view?usp=sharing" target=_blank class="link-button">CV</a>-->
+							<a type="button" href="#Education" class="link-button">Education</a>
+							<!--<a type="button" href="#Talks" class="link-button">Talks</a>-->
+							<a type="button" href="#Contact" class="link-button">Contact</a>
+						</div>
+						<div class="div-buttons">
+							<a style="padding:0; margin:0" href="https://github.com/hayleyhunt" target="_blank">
+								<img class="buttons" src="images/icons/github.png" alt="GitHub"/></a>
+							<a style="padding:0; margin:0" href="https://www.linkedin.com/in/hayleyhunt/" target="_blank"> 
+								<img class="buttons" src="images/icons/linkedin.png" alt="LinkedIn"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#About" style="text-decoration:none;">
+				<p style="font-size: 80px; color: #ffffff;text-align: center; margin:0; padding:0; line-height: 10px">﹀</p></br>
+			</a>
+
+<!-- =======================  ABOUT SECTION ======================= -->
+			<hr>
+			<div id="About" class="div-about">
+				<div class="div-about-title">
+					<h2 class="headingtwo">About</h2>
+				</div>
+				<div class="spacer"></div>
+				<div class="div-about-content" style="justify-content: center">
+					<p class="div-about-content-list">
+						In my current role at LRQA, I lead the development of scalable, data-driven tools and products that support responsible sourcing and supply chain due diligence. 
+						A core part of my role involves leading the integration, analysis, and development of grievance mechanism data collected across 11 helplines worldwide—empowering companies to identify emerging risks, support effective remediation, and strengthen their human rights and ESG strategies. 
+						Through this work, I actively use data to amplify marginalised voices and enhance equity in access to remedy and protection within global supply chains.</br></br>
+						
+						My technical expertise includes identification of business and data requirements, developing data strategies, and managing data science projects through their complete life cycle. I am skilled at model calibration, model and process optimisation (Bayesian, parallel computing, process automation), hyper parameter tuning, and validation against independent datasets in Python. 
+						I have proven success in effectively communicating high-quality, data-driven insights to technical and non-technical stakeholders.</br></br>
+						
+						I’m passionate about leveraging data for social good and committed to building inclusive, accountable systems through evidence-based approaches.
+						I am eager to apply my data skills with stakeholders across various sectors to tackle complex challenges and contribute to impactful, effective, and tangible solutions.</br></br>
+						I am available for short-term projects and longer-term engagements.</br></br>
+						In my pursuit of impactful projects, I prioritise initiatives which:</br>
+					</p>
+					<div class="div-about-content-grid">
+						<div class="about-box">
+							<div class="about-box-content">
+								<div class="about-box-content" style="display:flex">
+									<img class="people-group-logo" src="images/icons/people-group-solid.svg" alt="people-group"></br>
+								</div>
+								<p style="color:rgb(35,54,81)">Benefit a large number of individuals</p>
+							</div>
+						</div>
+						<div class="about-box">
+							<div class="about-box-content">
+								<div class="about-box-content" style="display:flex">
+									<img class="people-group-logo" src="images/icons/maximize-solid.svg" alt="maximise-effect"></br>
+								</div>
+								<p style="color:rgb(35,54,81)">Maximise the size of the positive effects per person</p>
+							</div>
+						</div>
+						<div class="about-box">
+							<div class="about-box-content">
+								<div class="about-box-content" style="display:flex">
+									<img class="people-group-logo" src="images/icons/arrow-up-right-dots-solid.svg" alt="maximise-time"></br>
+								</div>
+								<p style="color:rgb(35,54,81)">Create long-term, self-sustaining positive change</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+<!-- =======================  SKILLS SECTION ======================= -->
+			<!--<hr>
+			<div id="Skills" class="div-skills">
+				<div class="div-skills-title">
+					<h2 class="headingtwo">Skills</h2>
+				</div>
+				<div class="spacer"></div>
+				<div class="skills-grid">
+					<div class="skills-left">Text.
+						<div class="skills-bar"></div>
+						<div class="skills-bar-progress"></div>
+					</div>
+					<div class="skills-center">Text.</div>
+					<div class="skills-right">Text.</div>
+				</div> 
+			</div>-->
+
+<!-- =======================  PORTFOLIO GRID SECTION ======================= -->
+			<div class="spacer"></div>
+			<hr>
+			<div id="Portfolio" class="div-portfolio">
+				<div class="div-portfolio-title">
+					<h2 class="headingtwo">Portfolio</h2>
+				</div>
+				<div class="spacer" style="height: 20px"></div>
+				<div class="headingthree" style="text-align: center;">LRQA - Grievance Mechanisms</div>
+				<div class="spacer" style="height: 20px"></div>
+				<div class="portfolio-grid">
+					<div class="portfolio-box4">
+						<p class="portfolio-box-content1"></br>
+							<b>Global Grievance Data Integration:</b> Developed the strategic plan and led the integration of grievance data across 11 helplines, establishing a standardised and holistic approach to client interaction with their grievance data that promotes consistency and improves service delivery.</br></br>
+							<b>Grievance Mechanisms Product Development:</b> Led the development and implementation of a customised Power BI dashboard, enhancing data visibility which is tailored to client needs. This initiative streamlined decision-making for addressing grievances, significantly improving client satisfaction. I utilised client insights to iteratively enhance the dashboard’s features, ensuring it meets evolving user requirements.</br></br>
+							<b>CRM System Enhancement:</b> Led the integration of multiple CRM systems, including Zendesk, and implemented strategic changes that optimised data insights from calls to 11 grievance mechanism helplines. Contributed to the ongoing expansion of grievance data systems, including the establishment of 2 new helplines, improving scalability and adaptability to meet client needs and significantly enhancing the resolution of employee concerns and grievance remuneration.</br></br>
+							<b>People Management:</b> Oversaw the performance and development of a Data Analyst and actively participated in recruitment to strengthen our team’s capabilities and align with organisational goals.</br></br>
+							<b>Cross-Functional Collaboration:</b> Partnered with the EIQ team and global stakeholders to align project objectives, fostering a collaborative environment that enhances a data-driven culture across the organisation.</br></br>
+							Active member of the LRQA LGBT+ Focus Group.</a></br></br>
+							Professional experience</br>
+							(December 2024 - present)</p>
+					</div>
+				<div class="spacer" style="height: 20px"></div>
+				<div class="headingthree" style="text-align: center;">PhD Projects - Applied Data Science (Earth Science)</div>
+				<div class="div-portfolio-intro">
+					<p class="div-portfolio-paragraph">
+						My PhD research tested progressive mountain uplift as a driver of lateral biodiversification and river reorganisation through modelling multi-million-year-scale interactions between mantle geodynamics, crustal tectonics, topography, fluvial system evolution, and biotic migration and speciation, using the Miocene Himalaya as a case study.</br></br>
+						I generated, analysed, and visualised spatial, temporal, and geological data to form an understanding of complex Earth system interactions, and evaluated and validated these insights using a wide variety of independent datasets.</br></br>
+						I have taken multiple projects from idea inception, through successful grant making, totaling ~HK$1.85 million, to communication to a wide variety of audiences via peer-reviewed publications, presentations, and discussions.</br></br>
+						Funded by the Hong Kong PhD Fellowship Scheme (HKPFS) and the HKU Presidential PhD Scholarship (HKU-PS).</br></p>
+				</div>
+				<div class="portfolio-grid">
+					<div class="portfolio-box1">
+						<p class="portfolio-box-content1">Himalayan River Network Response To Progressive Himalayan Uplift</br></br>PhD project</br>(2022-present)</p>
+					</div>
+					<div class="portfolio-box2">
+						<p class="portfolio-box-content2">Himalayan Biotic Response To Progressive Mountain Uplift</br></br>PhD project</br>(2020-present)</p>
+					</div>
+					<div class="portfolio-box3">
+						<p class="portfolio-box-content3">The Influence of Earth’s Mantle Flow on Himalayan Uplift</br></br>PhD project</br>(2022-present)</p>
+						<!--<div class="portfolio-box-hover3">
+							<ul class="div-portfolio-content3">
+								<li>Creating landscape evolution numerical models of the Himalaya using <a style="padding:0;margin:0;" href="https://fastscape.org/">FastScape</a> and <a style="padding:0;margin:0;" href="https://github.com/xarray-contrib/xarray-simlab">xarray-simlab</a>, implemented in Python.</li>
+								<li>Running multiple models over a complex search space to find the optimal hyperparameters via distributed computing using the <a style="padding:0;margin:0;" href="https://github.com/ARM-software/mango">Mango</a> hyperparameter tuning library.</li>
+								<li>Aggregrating and visualising data using numpy, pandas and matplotlib to understand model behaviour by presenting different aspects of the model including river profiles and changes in topography through time.</li>
+								<li>Calibrating model outputs to reality by creating a misfit function and validated the model using multiple independent datasets including thermochronologic, GPS, and cosmogenic nuclide data.</li>
+							</ul>
+						</div>-->
+					</div>
+				</div>
+				<div class="div-portfolio-intro">
+				</br>
+					<p class="div-portfolio-paragraph">Please note that these projects are currently unpublished and so the associated code is not yet publicly available on my GitHub. The code for these projects will be made publicly available once the projects are published. If you would like further details regarding these projects, including code samples, please contact me at <a href=hayley.hunt@hotmail.co.uk style="padding:0;margin:0;">hayley.hunt@hotmail.co.uk</a>.</p>
+				</div>
+				<div class="spacer" style="height: 20px"></div>
+				<div class="headingthree" style="text-align: center;">Personal Projects</div>
+				<div class="spacer" style="height: 20px"></div>
+				<div class="portfolio-grid">
+					<div class="portfolio-box4">
+						<p class="portfolio-box-content1">Identification and diagnosis of a chiller system using data analysis and visualisation, with analysis. Find the project <a style="padding: 0; margin: 0;display: inline-block; color:black" href="https://github.com/hayleyhunt/HVAC_diagnosis" target="_blank">here.</a></br></br>Personal project</br>(August 2024)</p>
+					</div>
+					<div class="portfolio-box5">
+						<p class="portfolio-box-content2">Web scraping using Selenium of data from the WOWPresents YouTube channel. Data Analysis and visualization of the number of views of different video types, countries, US and All Star seasons, and queens of RuPaul's Drag Race and WowPresents YouTube channels. Find the project <a style="padding: 0; margin: 0;display: inline-block; color:black" href="https://github.com/hayleyhunt/rupaulsdragrace_youtube" target="_blank">here.</a></br></br>Personal project</br>(March 2024)</p>
+				</div>
+			</div>
+<!-- =======================  PORTFOLIO SECTION ======================= -->
+<!--			<hr>
+			<div id="Portfolio" class="div-portfolio">
+				<div class="div-portfolio-title">
+					<h2 class="headingtwo">Portfolio</h2>
+				</div>
+				<div class="spacer"></div>
+				<div class="div-portfolio-intro">
+					<p class="div-contact-paragraph">
+						My PhD research involves looking at multi-million-year-scale interactions between mantle geodynamics, crustal tectonics, topography, fluvial system evolution, and biotic migration and speciation, using the Miocene Himalaya as a case study. I conduct research by generating, analysing, and visualising different types of data, then comparing these data to observations of reality to validate my research.</p>
+				</div>
+				<div class="spacer"></div>
+				<div class="div-portfolio-content">
+					<div style="display: flex; align-items: center;justify-content: center;">
+						<div class="div-portfolio">
+							<div class="div-portfolio-content">
+									<h4 class="headingfour" style="text-align: center;">Himalayan River Network Response To Progressive Himalayan Uplift, PhD project (2022-present)</h4></br>
+									<div class="ul" style="align-items: center">
+										<ul class="div-portfolio-content-line-right">
+											<li>Creating landscape evolution numerical models of the Himalaya using <a style="padding:0;margin:0;" href="https://fastscape.org/">FastScape</a> and <a style="padding:0;margin:0;" href="https://github.com/xarray-contrib/xarray-simlab">xarray-simlab</a>, implemented in Python.</li>
+											<li>Running multiple models over a complex search space to find the optimal hyperparameters via distributed computing using the <a style="padding:0;margin:0;" href="https://github.com/ARM-software/mango">Mango</a> hyperparameter tuning library.</li>
+											<li>Aggregrating and visualising data using numpy, pandas and matplotlib to understand model behaviour by presenting different aspects of the model including river profiles and changes in topography through time.</li>
+											<li>Calibrating model outputs to reality by creating a misfit function and validated the model using multiple independent datasets including thermochronologic, GPS, and cosmogenic nuclide data.</li></ul></br></br>
+									</div>
+									<h4 class="headingfour" style="text-align: center;">Himalayan Biotic Response To Progressive Mountain Uplift, PhD project (2020-present)</h4></br>
+									<div class="ul" style="align-items: center">
+										<ul class="div-portfolio-content-line-right">
+											<li>Utilising the <a style="padding:0;margin:0;" href="https://www.biorxiv.org/content/10.1101/038695v1">DECX</a> (Dispersal-Extinction-Cladogenesis eXtended) numerical model to estimate ancestral areas of different species located in the Himalaya at present-day with dated phylogenies, present-day species distribution, and time-stratified paleogeographic matrices.</li>
+											<li>Aggregrating and visualising data in Python using numpy, pandas and matplotlib to show species migration into and out of regions of the Himalaya during their formation.</li></ul></br></br>
+									</div>
+									<h4 class="headingfour" style="text-align: center;">The Influence of Earth’s Mantle Flow on Himalayan Uplift, PhD project (2022-present)</h4></br>
+									<div class="ul" style="align-items: center">
+										<ul class="div-portfolio-content-line-right">
+											<li>Completing novel analogue and digital modelling of mantle convection as a driver of India-Eurasia continental convergence and tectonic slab break-off and its impact on Himalayan topography.</li>
+											<li>Conducting photogrammetry and laser acoustic imaging of the surface throughout model runs and visualised changes in (paleo)topography using Agisoft Metashape and CloudCompare.</li>
+											<li>Aggregrating and visualising data in Python using numpy, pandas and matplotlib to show tectonic plate shortening, thickening, and to create deformation maps tracking displacement and strain within the plates.</li></ul></br>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="spacer"></div>
+						<p style="width:80%; text-align: center; vertical-align: middle; margin:0px; padding:0px">Please note that these projects are currently unpublished and so the associated code is not yet publicly available on my GitHub. The code for these projects will be made publicly available once the projects are published. If you would like further details regarding these projects, including code samples, please contact me at <a href=hayley.hunt@hotmail.co.uk style="padding:0;margin:0;">hayley.hunt@hotmail.co.uk</a>.</p>
+					</div>
+				</div>
+			</div>
+			<div class="spacer"></div> -->
+<!-- =======================  EDUCATION SECTION ======================= -->
+<div id="Education" class="div-education">
+	<div class="div-education-title">
+		<h2 class="headingtwo">Education</h2>
+	</div>
+	<div class="div-education-content">
+		<div style="display: grid; grid-template-columns: 40% 10% 1fr; grid-template-rows: 1fr 0.1fr;">
+			<div class="div-education-content-line-left">
+				<img class="hku-logo-education" src="images/icons/hku.jpeg" alt="HKU"/></a>
+			</div>
+			<div class="div-education-content-line-right">
+			</div>
+			<div class="div-education-content-line-right">
+				<p class="headingthree">PhD Applied Data Science (Earth Science)</br>The University of Hong Kong.</p></br>
+			</div>
+			<div class="div-education-content-line-left">
+				<img class="rhul-logo-education" src="images/icons/rhul.jpeg" alt="RHUL"/></a>
+			</div>
+			<div class="div-education-content-line-right">
+				<p class="div-education-content-line-right"></p>
+			</div>
+			<div class="div-education-content-line-right">
+				<p class="headingthree">BSc(Hons) Geology</br>Royal Holloway, University of London.</p></br>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- =======================  TALKS SECTION ======================= -->
+<!--			<hr>
+			<div id="Talks" class="div-talks">
+				<div class="div-talks-title">
+					<h2 class="headingtwo">Talks</h2>
+				</div>
+				<div class="spacer"></div>
+				<div class="div-talks-content">
+					<div class="div-talks-content-grid">
+						<div class="div-talks-content-line-left">
+							<img class="TGS-logo-talks" src="images/icons/TGS.png" alt="The Geological Society"/></a>
+						</div>
+						<div class="div-talks-content-line-center">
+							<p class="div-talks-content-line-center">Sep 2022</p>
+						</div>
+						<div class="div-talks-content-line-right">
+							<h4 class="headingfour-talks">Himalayan tectonic uplift as a driver of lateral biodiversification</h4></br>
+							<h5 class="headingfive-talks">Webb, A. A. G., Hunt, H. R., Condamine, F., Hughes, A., Husson, L.</h5></br>
+							<h5 class="headingfive-talks"><a class="headingfive-talks" style="padding:0" href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.geolsoc.org.uk/~/media/shared/documents/events/2022/Society%20Events/Updated%20Asian%20Climates%20Draft%20Programme%20(003).pdf" target="_blank">Asian climate, tectonics and biodiversity hybrid conference, The Geological Society (Keynote)</a></h5></br>
+						</div>
+
+						<div class="div-talks-content-line-left">
+							<img class="AGU-logo-talks" src="images/icons/AGU.png" alt="AGU"/></a>
+						</div>
+						<div class="div-talks-content-line-center">
+							<p class="div-talks-content-line-center">Dec 2021</p>
+						</div>
+						<div class="div-talks-content-line-right">
+							<h4 class="headingfour-talks">The Himalaya vs. the World</h4></br>
+							<h5 class="headingfive-talks">Webb, A. A. G., McKenzie, R., Colleps, C., Constantino, D., Adeoti, B., Huang, Y., Hunt, H. R., Patrick, S.</h5></br>
+							<h5 class="headingfive-talks"><a class="headingfive" style="padding:0" href="https://ui.adsabs.harvard.edu/abs/2021AGUFM.T51B..01W/abstract" target="_blank">American Geophysical Union (AGU)</a></h5></br>
+						</div>
+
+						<div class="div-talks-content-line-left">
+							<img class="AOGS-logo-talks" src="images/icons/AOGS.png" alt="AOGS"/></a>
+						</div>
+						<div class="div-talks-content-line-center">
+							<p class="div-talks-content-line-center">Aug 2021</p>
+						</div>
+						<div class="div-talks-content-line-right">
+							<h4 class="headingfour-talks">Integrating Mantle Dynamics With Himalayan Crustal Tectonics</h4></br>
+							<h5 class="headingfive-talks">Webb, A. A. G., Husson, L., Clift, P., Hunt, H. R.</h5></br>
+							<h5 class="headingfive-talks"><a class="headingfive" style="padding:0" href="https://meetmatt-svr.net/Timetable/SlotScheduleAll?cfId=3&dayId=15&slotId=14&sId=8" target="_blank">Asia Oceania Geosciences Society (AOGS)</a></h5></br>
+						</div>
+
+						<div class="div-talks-content-line-left">
+							<img class="hku-logo-talks" src="images/icons/hku.jpeg" alt="HKU"/></a>
+						</div>
+						<div class="div-talks-content-line-center">
+							<p class="div-talks-content-line-center">Jul 2019</p>
+						</div>
+						<div class="div-talks-content-line-right">
+							<h4 class="headingfour-talks">Catchment Areas and Drainage of the Modern-Day Irrawaddy River, Myanmar, through heavy mineral analysis</h4></br>
+							<h5 class="headingfive-talks">Hunt, H. R.</h5></br>
+							<h5 class="headingfive-talks"><a class="headingfive" style="padding:0" href="https://www.scifac.hku.hk/events/ugreconf2019" target="_blank">University of Hong Kong (HKU) International Conference of Undergraduate Research in Science</a></h5></br>
+						</div>	
+						<div class="spacer"></div>
+					</div>
+				</div>
+			</div> 
+-->
+<!-- =======================  CONTACT SECTION ======================= -->
+			<div id="Contact" class="div-contact">
+				<div class="div-education-title">
+					<h2 class="headingtwo">Contact</h2>
+				</div>
+				<div class="spacer" style="height:20px"></div>
+				<div class="div-contact-paragraph">
+					<p class="div-contact-paragraph">
+						Feel free to contact me for any questions. For open source projects, please open an issue or pull request on Github. Otherwise, send me an email at <a href=hayley.hunt@hotmail.co.uk style="padding:0;margin:0;">hayley.hunt@hotmail.co.uk</a>.</p>
+				</div>
+			</div>
+<!-- =======================  CHARITY SECTION ======================= -->
+			<div class="div-charity">
+				<div class="div-charity-title">
+					<h2 class="headingtwo">Donation Pledge</h2>
+				</div>
+				<div class="spacer" style="height:20px"></div>
+				<div class="div-charity-paragraph">
+					<p class="div-charity-paragraph">
+						I have pledged to donate 10% of my income to organisations that can most effectively use it to improve the lives of others, now and in the years to come through the charity <a style="padding:0;margin:0;" href=https://www.givingwhatwecan.org/about-us/members target="_blank">Giving What We Can.</a></p>
+				</div>
+				<div class="spacer"></div>
+			</div>
+<!-- =======================  FOOTER ======================= -->
+			<div class="div-footer">
+				<p>Copyright &copy; Hayley Hunt 2025</p>
+			</div>
+    </body>
+</html>
