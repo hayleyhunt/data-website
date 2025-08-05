@@ -25,3 +25,28 @@
         height: 160px;
     }
 }
+
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #233651; /* Match your navbar */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Show on scroll (mobile only) */
+  @media (max-width: 768px) {
+    #backToTop.show {
+      display: block;
+    }
+  }
+  
