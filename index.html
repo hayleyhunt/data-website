@@ -57,7 +57,7 @@
 				</style>
     </head>
 <!-- =======================  NAVBAR ======================= -->
-    <body id="page-top" style="padding-top: 70px">
+	<body id="page-top" style="padding-top: 70px">
 		<nav class="div-navbar">
 			<div class="div-navbar-left-empty">
 				<div class="dropdown">
@@ -95,7 +95,8 @@
 
 					<div class="div-navbar-dropdown-content" id="myDropdown">
 						<ul>
-						<li><a href="#page-top" class="div-navbar-links">Intro</a></li>
+						<li><a href="#Intro" class="div-navbar-links">Intro</a></li>
+						<li><a href="#About" class="div-navbar-links">About</a></li>
 						<li><a href="#Portfolio" class="div-navbar-links">Portfolio</a></li>
 						<li><a href="#Education" class="div-navbar-links">Education</a></li>
 						<li><a href="#Contact" class="div-navbar-links">Contact</a></li>
@@ -114,8 +115,10 @@
 					</script>
 				</div>
 			</div>
+			
 			<div class="div-navbar-left">
-				<a href="#page-top" class="div-navbar-links" style="color: rgb(255, 255, 255);">Home</a>
+				<a href="#Intro" class="div-navbar-links" style="color: rgb(255, 255, 255);">Intro</a>
+				<a href="#About" class="div-navbar-links" style="color: rgb(255, 255, 255);">About</a>
 				<a href="#Portfolio" class="div-navbar-links" style="color: rgb(255, 255, 255);">Portfolio</a>
 				<a href="#Education" class="div-navbar-links" style="color: rgb(255, 255, 255);">Education</a>
 				<!--<a href="#Talks" class="div-navbar-links" style="color: rgb(255, 255, 255);">Talks</a>-->
@@ -143,7 +146,8 @@
 				});
 			});
 		</script>-->
-
+		<!--<div class="navbar-spacer"></div>-->
+		
 <!-- =======================  BACKGROUND ======================= -->
 		<div id="particles-js"></div>
 		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -187,10 +191,13 @@
 			});
 		  </script>
 
+<div id="scroll-progress"></div>
+
 <!-- =======================  INTRODUCTION SECTION ======================= -->
-			<div id="Home" class="div-headshotintro">
+<section id="Intro" class="section">	
+<div id="Home" class="div-headshotintro">
 				<div class="div-headshot">
-					<img class="headshot" src="images/Hayley Hunt.jpeg" alt="Hayley Hunt headshot">
+					<img class="headshot" src="images/Hayley Hunt.jpeg" alt="Hayley Hunt headshot" loading="lazy">
 				</div>
 				<div class="div-introduction-container">
 					<div class="div-introduction">
@@ -214,9 +221,9 @@
 						</div>
 						<div class="div-buttons">
 							<a style="padding:0; margin:0" href="https://github.com/hayleyhunt" target="_blank">
-								<img class="buttons" src="images/icons/github.png" alt="GitHub"/></a>
+								<img class="buttons" src="images/icons/github.png" alt="GitHub" loading="lazy"/></a>
 							<a style="padding:0; margin:0" href="https://www.linkedin.com/in/hayleyhunt/" target="_blank"> 
-								<img class="buttons" src="images/icons/linkedin.png" alt="LinkedIn"></a>
+								<img class="buttons" src="images/icons/linkedin.png" alt="LinkedIn" loading="lazy"></a>
 						</div>
 					</div>
 				</div>
@@ -224,9 +231,11 @@
 			<a href="#About" style="text-decoration:none;">
 				<p style="font-size: 80px; color: #ffffff;text-align: center; margin:0; padding:0; line-height: 10px">﹀</p></br>
 			</a>
+		</section>	
 
 <!-- =======================  ABOUT SECTION ======================= -->
 			<hr>
+			<section id="About" class="section">
 			<div id="About" class="div-about">
 				<div class="div-about-title">
 					<h2 class="headingtwo">About</h2>
@@ -250,7 +259,7 @@
 						<div class="about-box">
 							<div class="about-box-content">
 								<div class="about-box-content" style="display:flex">
-									<img class="people-group-logo" src="images/icons/people-group-solid.svg" alt="people-group"></br>
+									<img class="people-group-logo" src="images/icons/people-group-solid.svg" alt="people-group" loading="lazy"></br>
 								</div>
 								<p style="color:rgb(35,54,81)">Benefit a large number of individuals</p>
 							</div>
@@ -258,7 +267,7 @@
 						<div class="about-box">
 							<div class="about-box-content">
 								<div class="about-box-content" style="display:flex">
-									<img class="people-group-logo" src="images/icons/maximize-solid.svg" alt="maximise-effect"></br>
+									<img class="people-group-logo" src="images/icons/maximize-solid.svg" alt="maximise-effect" loading="lazy"></br>
 								</div>
 								<p style="color:rgb(35,54,81)">Maximise the size of the positive effects per person</p>
 							</div>
@@ -266,7 +275,7 @@
 						<div class="about-box">
 							<div class="about-box-content">
 								<div class="about-box-content" style="display:flex">
-									<img class="people-group-logo" src="images/icons/arrow-up-right-dots-solid.svg" alt="maximise-time"></br>
+									<img class="people-group-logo" src="images/icons/arrow-up-right-dots-solid.svg" alt="maximise-time" loading="lazy"></br>
 								</div>
 								<p style="color:rgb(35,54,81)">Create long-term, self-sustaining positive change</p>
 							</div>
@@ -274,6 +283,7 @@
 					</div>
 				</div>
 			</div>
+			</section>
 
 <!-- =======================  SKILLS SECTION ======================= -->
 			<!--<hr>
@@ -294,6 +304,7 @@
 
 <!-- =======================  PORTFOLIO GRID SECTION ======================= -->
 			<div class="spacer"></div>
+			<section id="Portfolio" class="section">
 			<hr>
 			<div id="Portfolio" class="div-portfolio">
 				<div class="div-portfolio-title">
@@ -357,6 +368,7 @@
 						<p class="portfolio-box-content2">Web scraping using Selenium of data from the WOWPresents YouTube channel. Data Analysis and visualization of the number of views of different video types, countries, US and All Star seasons, and queens of RuPaul's Drag Race and WowPresents YouTube channels. Find the project <a style="padding: 0; margin: 0;display: inline-block; color:black" href="https://github.com/hayleyhunt/rupaulsdragrace_youtube" target="_blank">here.</a></br></br>Personal project</br>(March 2024)</p>
 				</div>
 			</div>
+		</section>
 <!-- =======================  PORTFOLIO SECTION ======================= -->
 <!--			<hr>
 			<div id="Portfolio" class="div-portfolio">
@@ -404,14 +416,18 @@
 			</div>
 			<div class="spacer"></div> -->
 <!-- =======================  EDUCATION SECTION ======================= -->
+<section id="Education" class="section">
 <div id="Education" class="div-education">
+	<div class="spacer" style="height: 60px"></div>
+	<hr>
 	<div class="div-education-title">
 		<h2 class="headingtwo">Education</h2>
 	</div>
+	<div class="spacer" style="height: 40px"></div>
 	<div class="div-education-content">
 		<div class="education-grid">
 		  <div class="div-education-content-line-left">
-			<img class="hku-logo-education" src="images/icons/hku.jpeg" alt="HKU" />
+			<img class="hku-logo-education" src="images/icons/hku.jpeg" alt="HKU" loading="lazy"/>
 		  </div>
 		  <div class="div-education-content-line-right"></div>
 		  <div class="div-education-content-line-right">
@@ -420,7 +436,7 @@
 			</p>
 		  </div>
 		  <div class="div-education-content-line-left">
-			<img class="rhul-logo-education" src="images/icons/rhul.jpeg" alt="RHUL" />
+			<img class="rhul-logo-education" src="images/icons/rhul.jpeg" alt="RHUL" loading="lazy"/>
 		  </div>
 		  <div class="div-education-content-line-right"></div>
 		  <div class="div-education-content-line-right">
@@ -454,9 +470,11 @@
 			</div>
 		</div>-->
 
-		
+
 	</div>
 </div>
+</section>
+<div class="spacer" style="height:40px"></div>
 <!-- =======================  TALKS SECTION ======================= -->
 <!--			<hr>
 			<div id="Talks" class="div-talks">
@@ -519,31 +537,217 @@
 			</div> 
 -->
 <!-- =======================  CONTACT SECTION ======================= -->
+			<section id="Contact" class="section">
+			<hr>
 			<div id="Contact" class="div-contact">
 				<div class="div-education-title">
 					<h2 class="headingtwo">Contact</h2>
 				</div>
-				<div class="spacer" style="height:20px"></div>
+				<div class="spacer" style="height:40px"></div>
 				<div class="div-contact-paragraph">
 					<p class="div-contact-paragraph">
 						Feel free to contact me for any questions. For open source projects, please open an issue or pull request on Github. Otherwise, send me an email at <a href=hayley.hunt@hotmail.co.uk style="padding:0;margin:0;">hayley.hunt@hotmail.co.uk</a>.</p>
 				</div>
 			</div>
+			<div class="spacer" style="height: 70px"></div>
+			<hr>
+			</section>
 <!-- =======================  CHARITY SECTION ======================= -->
+			<section id="Charity" class="section">
 			<div class="div-charity">
 				<div class="div-charity-title">
 					<h2 class="headingtwo">Donation Pledge</h2>
 				</div>
-				<div class="spacer" style="height:20px"></div>
+				<div class="spacer" style="height:40px"></div>
 				<div class="div-charity-paragraph">
 					<p class="div-charity-paragraph">
 						I have pledged to donate 10% of my income to organisations that can most effectively use it to improve the lives of others, now and in the years to come through the charity <a style="padding:0;margin:0;" href=https://www.givingwhatwecan.org/about-us/members target="_blank">Giving What We Can.</a></p>
 				</div>
-				<div class="spacer"></div>
+				<div class="spacer" style="height: 70px"></div>
 			</div>
+			</section>
 <!-- =======================  FOOTER ======================= -->
 			<div class="div-footer">
 				<p>Copyright &copy; Hayley Hunt 2025</p>
 			</div>
+<!-- =======================  BACK-TO-TOP ======================= -->
+			<button id="backToTop" title="Back to Top">↑</button>
+			
+			<script>
+				const backToTopButton = document.getElementById("backToTop");
+			  
+				window.addEventListener("scroll", () => {
+				  if (window.scrollY > 300) {
+					backToTopButton.classList.add("show");
+				  } else {
+					backToTopButton.classList.remove("show");
+				  }
+				});
+			  
+				backToTopButton.addEventListener("click", () => {
+				  window.scrollTo({
+					top: 0,
+					behavior: "smooth"
+				  });
+				});
+			  </script>
+<!-- =======================  HIGHLIGHT CURRENT SECTION IN NAVBAR ======================= -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".div-navbar-links");
+
+  const normalObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${id}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  const lowThresholdObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${id}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  sections.forEach((section) => {
+    if (section.id === "Education") {
+      lowThresholdObserver.observe(section);
+    } else {
+      normalObserver.observe(section);
+    }
+  });
+});
+
+const lowThresholdObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${id}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    },
+    {
+      threshold: 1,
+    }
+  );
+
+  sections.forEach((section) => {
+    if (section.id === "Contact") {
+      lowThresholdObserver.observe(section);
+    } else {
+      normalObserver.observe(section);
+    }
+  });
+  </script>  
+<!-- =======================  SECTION FADE-IN ======================= -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+	  const allSections = document.querySelectorAll('.section');
+	  const portfolioId = 'Portfolio'; // adjust this to match your section's ID
+  
+	  // Observer for Portfolio section only
+	  const lowThresholdObserver = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+		  if (entry.isIntersecting) {
+			entry.target.classList.add('visible');
+			lowThresholdObserver.unobserve(entry.target);
+		  }
+		});
+	  }, {
+		threshold: 0.05
+	  });
+  
+	  // Observer for all other sections
+	  const normalObserver = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+		  if (entry.isIntersecting) {
+			entry.target.classList.add('visible');
+			normalObserver.unobserve(entry.target);
+		  }
+		});
+	  }, {
+		threshold: 0.4
+	  });
+  
+	  // Assign sections to the appropriate observer
+	  allSections.forEach(section => {
+		if (section.id === portfolioId) {
+		  lowThresholdObserver.observe(section);
+		} else {
+		  normalObserver.observe(section);
+		}
+	  });
+	});
+  </script>
+  
+<!-- =======================  SCROLL PROGRESS BAR ======================= -->
+
+  <script>
+	window.addEventListener("scroll", () => {
+	  const scrollTop = window.scrollY;
+	  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+	  const scrollPercent = (scrollTop / docHeight) * 100;
+	  document.getElementById("scroll-progress").style.width = `${scrollPercent}%`;
+	});
+  </script>
+
+<!-- =======================  REMOVE SPACE ABOVE WEBSITE NAVBAR WHEN BROSWER HIDES URL BAR ======================= -->
+
+<!--<script>
+	function adjustNavbarPosition() {
+	  const navbar = document.querySelector('.div-navbar');
+	  if (!window.visualViewport) return;
+  
+	  // Calculate the height of the URL bar (difference between layout viewport and visual viewport)
+	  const urlBarHeight = window.innerHeight - window.visualViewport.height;
+  
+	  // If the URL bar is visible (height > ~20), push navbar down by that height, else set top=0
+	  if (urlBarHeight > 20) {
+		navbar.style.top = urlBarHeight + 'px';
+	  } else {
+		navbar.style.top = '0px';
+	  }
+	}
+  
+	// Adjust on load, resize, scroll (scroll event on visualViewport detects URL bar show/hide)
+	window.addEventListener('load', adjustNavbarPosition);
+	window.visualViewport.addEventListener('resize', adjustNavbarPosition);
+	window.visualViewport.addEventListener('scroll', adjustNavbarPosition);
+  </script> --> 
+  
+  
+
     </body>
 </html>
