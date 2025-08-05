@@ -79,3 +79,26 @@ li {
     text-align: justify;
     line-height: 30px;
 }
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white; /* Change to your accent color */
+    z-index: 9999;
+    transition: width 0.2s ease-out;
+  }
+  
