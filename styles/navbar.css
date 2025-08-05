@@ -1,4 +1,22 @@
-.div-navbar{
+/*.div-navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: rgb(35, 54, 81);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    transition: top 0.3s ease;
+    /* Start at top: 0; JS will adjust dynamically */
+    /*top: 0;
+    padding-top: env(safe-area-inset-top, 0px);
+    box-sizing: border-box;
+  }*/
+
+  .div-navbar{
     display: flex;
     flex-direction: row;
     background-color: rgb(35,54,81);
@@ -13,6 +31,11 @@
     right:0px;
     z-index: 2;
 }
+
+  /*.navbar-spacer {
+    height: calc(70px + env(safe-area-inset-top, 0px));
+  }*/
+
 .div-navbar-left{
     display: flex;
     width: 40%;
@@ -130,6 +153,11 @@
 .div-navbar-links:active {
     background-color: rgb(150, 150, 150);
     opacity: 0.75;
+}
+
+.div-navbar-links.active {
+    background-color: rgb(73, 127, 174);
+    color: white;
 }
 
 .div-navbar-centre{
