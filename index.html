@@ -680,45 +680,46 @@ const lowThresholdObserver = new IntersectionObserver(
     }
   });
   </script>  
-<!-- =======================  SECTION FADE-IN ======================= -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-	  const allSections = document.querySelectorAll('.section');
-	  const portfolioId = 'Portfolio'; // adjust this to match your section's ID
-  
-	  // Observer for Portfolio section only
-	  const lowThresholdObserver = new IntersectionObserver((entries) => {
-		entries.forEach(entry => {
-		  if (entry.isIntersecting) {
-			entry.target.classList.add('visible');
-			lowThresholdObserver.unobserve(entry.target);
-		  }
-		});
-	  }, {
-		threshold: 0.05
-	  });
-  
-	  // Observer for all other sections
-	  const normalObserver = new IntersectionObserver((entries) => {
-		entries.forEach(entry => {
-		  if (entry.isIntersecting) {
-			entry.target.classList.add('visible');
-			normalObserver.unobserve(entry.target);
-		  }
-		});
-	  }, {
-		threshold: 0.35
-	  });
-  
-	  // Assign sections to the appropriate observer
-	  allSections.forEach(section => {
-		if (section.id === portfolioId) {
-		  lowThresholdObserver.observe(section);
-		} else {
-		  normalObserver.observe(section);
-		}
-	  });
-	});
+  <!-- =======================  SECTION FADE-IN ======================= -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const allSections = document.querySelectorAll('.section');
+      const portfolioId = 'Portfolio'; // adjust to your section's ID
+
+      // Mobile vs desktop thresholds
+      const isMobile = window.innerWidth < 768;
+      const mobileThreshold = 0.1;   // trigger earlier
+      const desktopThreshold = 0.35; // keep your current setting
+
+      // Portfolio observer
+      const lowThresholdObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            lowThresholdObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.05 });
+
+      // Normal observer with adaptive threshold
+      const normalObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            normalObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: isMobile ? mobileThreshold : desktopThreshold });
+
+      // Assign sections
+      allSections.forEach(section => {
+        if (section.id === portfolioId) {
+          lowThresholdObserver.observe(section);
+        } else {
+          normalObserver.observe(section);
+        }
+      });
+    });
   </script>
   
 <!-- =======================  SCROLL PROGRESS BAR ======================= -->
