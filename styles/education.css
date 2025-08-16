@@ -40,6 +40,15 @@
     gap: 10px; /* Optional: Adds spacing between grid cells */
     width: 100%;
   }
+@media (min-width: 768px) {
+    .education-grid {
+      display: grid;
+      grid-template-columns: 20% 10% auto; /* use 'auto' instead of 1fr for the rightmost */
+      gap: 10px;
+      width: max-content;   /* shrink grid to content width */
+      margin: 0 auto;       /* center the grid horizontally */
+    }
+  }
 .div-education-content-line-left{
     display: flex;
     text-align:center;
