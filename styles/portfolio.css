@@ -3,6 +3,65 @@
     text-align: center;
     width: 100%;
 }
+
+
+
+
+
+
+
+/* Container and SVG sizing */
+.gm-map-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 400px; /* adjust as needed */
+}
+
+.gm-map-div svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Default fill for all countries */
+.gm-map-div svg path {
+    fill: #ccc; /* neutral grey for countries not in the list */
+    transition: fill 0.3s ease;
+}
+
+/* Single-path countries default color */
+#BD, #PK, #IN, #TH, #DO, #BR {
+    fill: #007BFF; /* normal blue */
+    cursor: pointer;
+}
+
+/* Multi-path countries default color */
+.gm-map-div svg path.China,
+.gm-map-div svg path.Indonesia,
+.gm-map-div svg path.Malaysia {
+    fill: #007BFF !important; /* force blue even if inline SVG fill exists */
+    cursor: pointer;
+}
+
+/* Hover effect for all hoverable countries */
+path.hoverable.hover,
+#BD:hover, #IN:hover, #PK:hover, #ID:hover, #TH:hover, #DO:hover, #BR:hover,
+.gm-map-div svg path.China.hover,
+.gm-map-div svg path.Indonesia.hover,
+.gm-map-div svg path.Malaysia.hover {
+    fill: #001F70 !important; /* dark blue on hover */
+}
+
+
+  
+
+
+
+
+
+
 .div-portfolio-intro {
     display: flex;
     justify-content: center;
@@ -241,4 +300,4 @@
     .portfolio-box4{
         height: 350px;
     }
-}
+}*/
